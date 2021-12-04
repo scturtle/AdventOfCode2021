@@ -1,3 +1,4 @@
+#[allow(clippy::nonminimal_bool)]
 #[test]
 fn run() {
     let txt = crate::common::get_input(3).unwrap();
