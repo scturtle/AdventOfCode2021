@@ -15,7 +15,10 @@ impl Pos {
 #[test]
 fn run() {
     let txt = crate::common::get_input(9).unwrap();
-    let m: Vec<Vec<u8>> = txt.lines().map(|l| l.bytes().map(|b| b - b'0').collect()).collect();
+    let m: Vec<Vec<u8>> = txt
+        .lines()
+        .map(|l| l.bytes().map(|b| b - b'0').collect())
+        .collect();
     let h = m.len();
     let w = m[0].len();
     let mut ans1: usize = 0;
@@ -44,7 +47,7 @@ fn run() {
                     }
                     saw.insert(nxt);
                     q.push_back(nxt);
-                 }
+                }
             }
             basins.push(saw.len());
         }
