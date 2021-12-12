@@ -1,7 +1,6 @@
 #[derive(Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Debug, Hash)]
 struct Pos(usize, usize);
 impl Pos {
-    #[allow(dead_code)]
     pub fn around(&self, n: usize, m: usize) -> impl Iterator<Item = Pos> {
         let (ci, cj) = (self.0 as i32, self.1 as i32);
         [(0, 1), (1, 0), (0, -1), (-1, 0)]

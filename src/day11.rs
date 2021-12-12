@@ -2,7 +2,6 @@
 struct Pos(usize, usize);
 impl Pos {
     #[rustfmt::skip]
-    #[allow(dead_code)]
     pub fn around(&self, n: usize, m: usize) -> impl Iterator<Item = Pos> {
         let (ci, cj) = (self.0 as i32, self.1 as i32);
         [(0, 1), (1, 0), (0, -1), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1),]
@@ -13,7 +12,6 @@ impl Pos {
     }
 }
 
-#[allow(dead_code)]
 fn show(octs: &[Vec<u8>]) {
     let mut s = String::new();
     for l in octs {
@@ -31,7 +29,6 @@ fn show(octs: &[Vec<u8>]) {
     println!("{}", s);
 }
 
-#[allow(dead_code)]
 fn step(octs: &mut Vec<Vec<u8>>) -> usize {
     for l in octs.iter_mut() {
         for c in l {

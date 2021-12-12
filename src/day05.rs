@@ -1,4 +1,3 @@
-#![allow(unused_imports)]
 use itertools::{iproduct, Itertools};
 use std::cmp::Ordering::{Equal, Greater, Less};
 

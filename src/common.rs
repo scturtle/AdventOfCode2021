@@ -2,7 +2,6 @@ use std::fs::{read_to_string, File};
 use std::io::{Error, ErrorKind, Write};
 use std::path::Path;
 
-#[allow(dead_code)]
 pub fn get_test_input() -> std::io::Result<String> {
     read_to_string("test.txt")
 }

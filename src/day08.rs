@@ -2,7 +2,7 @@ use itertools::Itertools;
 use std::collections::BTreeMap;
 
 #[rustfmt::skip]
-#[allow(dead_code, clippy::many_single_char_names)]
+#[allow(clippy::many_single_char_names)]
 fn guess(mut is: Vec<&str>, os: Vec<&str>) -> (usize, usize) {
     is.sort_by_key(|w| w.len());
     let mut cnt235 = BTreeMap::<char, usize>::new();

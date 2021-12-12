@@ -1,4 +1,3 @@
-#[allow(dead_code)]
 #[derive(Debug)]
 struct Board {
     nums: Vec<u32>,
@@ -7,7 +6,6 @@ struct Board {
     score: u32,
 }
 
-#[allow(dead_code)]
 impl Board {
     fn new(nums: Vec<u32>) -> Self {
         Self {
