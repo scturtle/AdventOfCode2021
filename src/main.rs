@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 #![allow(unused_imports)]
-#![feature(stmt_expr_attributes)]  // to use #[rustfmt::skip] for stmt
+#![feature(stmt_expr_attributes)] // to use #[rustfmt::skip] for stmt
 mod common;
 mod day01;
 mod day02;
@@ -18,5 +18,6 @@ mod day13;
 mod day14;
 mod day15;
 mod day16;
+mod day17;
 
 fn main() {}
