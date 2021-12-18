@@ -24,7 +24,8 @@ fn run() {
             y += vy;
             if vx > 0 {
                 vx -= 1;
-            } else if vx < 0 {
+            }
+            if vx < 0 {
                 vx += 1;
             }
             vy -= 1;
